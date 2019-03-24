@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.whole{
+    background-color:white;
+    padding-top:50px;
+}
+.wholein{
+    margin:0 auto;
+
+    width: 350px;
+    background-color:#e6d7d7;
+    height: 300px;
+    padding:20px 0  20px 25px;
+    border-radius: 5px;
+    /* 靠浮动不可以撑起边框 */
+}
+.circle{
+    border-radius:20px;
+    background-color: rgb(255, 255, 255);
+    height: 36px;
+    width: 220px;
+    padding:5px 0 0 15px;
+    float:left;
+}
+#data{
+    height: 26px;
+    width: 200px;
+    border:0;
+    font-size: 14px;
+    border-radius: 3px;
+    outline:none;
+}
+#search{
+    height: 40px;
+    width: 80px;
+    color:white;
+    font-size: 14px;
+    float:left;
+    border:none;
+    margin-left: 5px;
+}
+#hist{
+    height: 40px;
+    width: 319px;
+    background-color: #f7f0ea;
+    margin-top:10px;
+    float:left;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.text{
+    float:left;
+    padding-right: 210px;
+    color: rgb(112, 110, 110);
+    padding-left:7px;
+}
+#clearall{
+    background-color: darkgrey;
+    color: white;
+    font-size: 15px;
+    border-radius: 25px;
+    float: left;
+    margin-top: 18px;
+    border:none;
+}
+#search{
+    border-radius:25px;
+    border-radius:25px;
+    background-color:#766379;
+}
+
+#container{
+    height: 200px;
+    width: 313px;
+    background-color: #f7f0ea;
+    padding:5px 3px 0 3px;
+    float:left;
+}
+.word{
+    float:left;
+    color:white;
+    background:#eda7a7;
+    border-radius:12px;
+    padding:2px 12px 2px 12px;
+    margin:0 2px 8px 2px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="作业04.css">
+</head>
+<body>
+    <div class="whole">
+        <div class="wholein">
+            <!-- 获取焦点，最近搜索出现div -->
+            <div class="circle">
+                <input type="text" placeholder="请输入想要查找的商品" id="data" onmousedown="sousuo()">
+            </div>
+            
+            
+            <!-- 添加新的键值对 -->
+            <button id="search" onclick="saveStorage()">搜索</button>
+            <br>   
+            
+            <!-- 清除所有的键值对 -->
+            <div id="hist">
+                <p class="text">最近搜索</p>  
+                <button id="clearall" onclick="clearall()">X</button>
+            </div>
+            <div id="container"></div>
+        </div>
+    </div>
+</body>
+<script>
+    //保存
+    function saveStorage(){
+        var data =document.getElementById('data');
+        var time = new Date().getTime();
+         localStorage.setItem(time,data.value);
+    }
+    // 创建方格
+    function creat(str1,str2){
+        var container = document.getElementById('container');        
+        container.innerHTML+='<span class="word">'+str2+'</span>';
+    }
+    //显示
+    function sousuo(){
+        container.innerHTML=''; 
+        for(var i = 0; i < localStorage.length; i++){
+            var key = localStorage.key(i);
+            var value = localStorage.getItem(key);
+            creat(key,value);
+        }
+    }
+    //清除
+    function clearall(){
+        console.log("hhh");
+        localStorage.clear();
+        alert("历史记录已被清除");
+        document.getElementById('container') .innerHTML ="";
+    }
+</script>
+</html>
