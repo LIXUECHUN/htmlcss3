@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>刮刮乐</title>
+    <style>
+        #under{
+           left:0;
+           top:0;
+            background-color: rgb(223, 242, 248);
+            position: absolute; 
+        } 
+        #canvas{
+            border:1px solid darkgrey ;
+            position: absolute; 
+            left:0;
+            top:0;
+        }
+    </style>
+</head>
+<body>
+    
+    <canvas id="under" width=300 height=200 ></canvas>
+    <canvas id = "canvas" width=300 height = 200></canvas>
+</body>
+<script>
+    var att = ['一等奖','二等奖','三等奖','havefun'];
+    var opt = Math.floor(Math.random()*4);
+    
+    //文字
+    var under=document.getElementById("under");
+    var u=under.getContext('2d');
+    u.font=" 60px 黑体";
+    u.fillStyle='red';
+    u.fillText(att[opt],50,125);
+
+    //获取
+    var div = document.getElementById("under");
+    var canvas = document.getElementById('canvas');
+    var context = canvas.getContext("2d");
+
+
+    //绘制灰色矩形
+    context.fillStyle="#D1D1D1"; //设置填充色为浅灰色
+    context.fillRect(0, 0, 300, 200);
+    context.globalCompositeOperation = 'destination-out';
+
+    //擦除操作
+    context.globalCompositeOperation="destination-out";
+
+    // 鼠标按下--向canvas添加属性,不用id,获取的名字，直接传参数
+    //设置标志位
+    var s = false;
+    canvas.onmousedown=function(ev){
+        s = true;
+        var ev = ev || event;
+        var x = ev.clientX;
+        var y = ev.clientY;
+        context.beginPath();
+        context.arc(x,y,30,0,2*Math.PI,false);
+        context.fillStyle= "#D1D1D1";
+        context.fill();
+        context.closePath();
+        canvas.onmousemove = function(ev){
+            if(s){
+                var ev = ev || event;
+                var x = ev.clientX;
+                var y = ev.clientY;
+                context.beginPath();
+                context.arc(x,y,30,0,2*Math.PI,false);
+                context.fillStyle= "#D1D1D1";
+                context.fill();
+                context.closePath();
+                }
+            
+        }
+    }
+    //鼠标离开时，标志位改变，onmousemove失效
+    canvas.onmouseup = function(){
+        s = false;
+        //判断像素点
+        var arr = context.getImageData(0,0,300,200);
+        var num = 0;
+        var length = arr.data.length;
+        console.log(length);
+        //i += 4
+        for(var i = 3; i < length ; i+= 4){
+            if(arr.data[i] == 0)
+                num++;
+        }
+        //像素点>0.85时，绘制无色矩形。
+        if(num > (length/4)*0.85)
+            context.fillRect(0, 0, 300, 200);
+            context.fill();
+                //不填色就是，无色。
+    }
+
+</script>
+</html>
