@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="interface.css">
+</head>
+<body>
+    <div id = "box">   
+        <!-- 图片 -->
+        <div id="img">
+            <img src="zhanqiao.png" alt="" >
+            <div id = "fog"></div>
+        </div> 
+
+        <!-- 圆框 -->
+        <div id = "date">&nbsp15&nbsp<br>五月</div>
+     
+        <!-- 小框 -->
+        <span id = "lititle">照片</span>
+
+        <!-- 文章 -->
+        <div id = "artical"> 
+            <h2>青岛栈桥</h2>
+            <p>国家AAAA级旅游景区</p>
+            <div id="detail">青岛栈桥是青岛海滨风景区的景点之一，是国务院于1982年首批公布的国家级风景名胜区。青岛栈桥位于游人如织的青岛中山路南端，桥身从海岸探入如弯月般的青岛湾深处。桥身供游人参观并在此停靠旅游船，由此乘船可看海上青岛。</div>
+
+            <span>10分钟前&nbsp&nbsp&nbsp123评论</span>
+        </div>
+    </div>
+</body>
+<script>
+    var artical = document.getElementById("artical");
+    var img = document.getElementById("img");
+    var lititle = document.getElementById("lititle");
+    var detail = document.getElementById("detail");
+    var arr = document.getElementById("img").childNodes;
+    console.log(arr);
+
+    artical.onmouseover = function(){
+        //图片
+        arr[1].classList.add("active");
+        fog.style.display = "block";
+        //小框
+        lititle.style.top = "122px";        
+        detail.style.transform = "scale(1,1)";
+    }
+    artical.onmouseout = function(){
+        arr[1].classList.remove("active");
+        fog.style.display = "none";
+
+        lititle.style.top = "202px";
+        detail.style.transform = "scale(0,0)";   
+    }
+</script>
+</html>
