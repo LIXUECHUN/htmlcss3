@@ -1,0 +1,989 @@
+*{
+    padding:0px;
+    margin:0px;
+}
+ul, li, ol{
+	list-style: none;
+}
+button{
+	outline: none;
+}
+/* ++++++++++++首页 */
+/* 大屏幕 */
+@media only screen and (min-width: 680px) {
+    .blackout{
+        display: block;
+    }
+    .black{
+        display: block;
+    }
+    .ksdz{
+        display:none;
+    }
+}
+/* 小屏幕 */
+@media only screen and (max-width: 680px) {
+    .ksdz{
+        height: 56px;
+        width: 166px;
+        background-color: orange;
+        border-radius: 5px;
+        color:white;
+        font-size:24px;
+        text-align: center;
+        margin: 25px 20px 0 0;
+        border:0;
+        display:block;
+        float:right;
+        
+    }
+    .blackout{
+        display: none;
+    }
+    .black{
+        display: none;
+    }
+    .whiteout{
+        /* background-color: white; */
+        display: none;
+    }
+    #bs-1{
+        width: 668px;
+        margin:0 auto;
+        height: 110px;
+        font-size: 16px;
+    }
+    .navbar-header{
+        background-color: #e1e1e1;
+        height: 107px;
+    }
+}
+/* ++++++++++++轮播图 */
+ /* 大屏幕 */
+@media only screen and (min-width: 680px) {
+    .texts{
+        position: absolute;
+        top:300px;
+        left:27%;
+        width: 585px;
+        height: 45px;
+        border-radius: 8px;
+        border:5px solid black;
+    }
+    .texts > .t3{
+        height: 35px;
+        width: 125px;
+        background-color: #cb5405;
+        float: left;
+        border-radius: 2px;
+    }
+    .texts > .t3>img{
+        margin: 3px 0 0 10px;
+    }
+    .carousel{
+        position: relative;
+        top: 140px;
+    }
+}
+/* 小屏幕 */
+  @media only screen and (max-width: 680px) {
+    .carousel-inner>img{
+        height: 365px;
+        width: 100%;
+    }
+     /* 加不上代码  */
+    .texts{
+        position: absolute;
+        top:244px;
+        margin: 0 auto;
+        width: 660px;
+        height: 45px;
+        border-radius: 8px;
+        border:5px solid black;
+    }
+    .texts > .t3{
+        height: 35px;
+        width: 200px;
+        background-color: #cb5405;
+        float: left;
+        border-radius: 2px;
+    }
+    .texts > .t3>img{
+        margin: 3px 0 0 30px;
+    }
+} 
+/* +++++++++机场接送 */
+/* 大页面 */
+ @media only screen and (min-width: 680px){
+    .mainout{
+        width:100%;
+        background-color: #dddddd;
+        clear: both;
+    }
+    .transferad{
+        display: none;
+    }
+    .transfer{
+        display: block;
+    }
+    .main{
+        width: 1200px;
+        margin:0 auto;
+        padding-top:30px;
+    }
+    .whole {
+        background-color: rgb(221,221,221,221);
+        position: relative;
+        top: 140px;
+    }
+    .firstwhole{
+        position: fixed;
+        top: 0;
+        height: 134px;
+        z-index: 100;
+        width: 100%;
+    }
+    
+} 
+/* 小页面 */
+@media only screen and (max-width: 680px){
+    .whole{
+        width: 100%;
+        height: 3000px;
+        background-color:#e8e5e5;
+    }
+    .mainout{
+        width:100%;
+        background-color: white;
+        clear: both;
+        /* padding-top: 10px; */
+    }
+    .mainmid{
+        width: 100%;
+        background-color: rgb(252, 252, 252);
+    }
+    .main{
+        width: 668px;
+        margin: 0 auto;
+    }
+    .transfer{
+        display: none;
+    }
+    .transferad{
+        display: block;
+        width: 680px;
+        margin: 0 auto;
+    }
+
+} 
+/* ++++++++热门路线 */
+/* 大 */
+@media only screen and (min-width: 680px){
+    .ttad{
+        display: none;
+    }
+    .bt-ckgd{
+        display: none;
+    }
+    .imgroute{
+        height: 1035px;
+        width: 1200px;
+        margin-bottom: 30px;
+    }
+    .imgroute > .le{
+        width: 49%;
+
+        height: 1032pxx;
+        border-right:3px solid #d3d3d8;
+        float: left;
+    }
+    .sy>img{
+        width: 587px;
+    }
+    .dfy>img{
+        widows: 587px;
+    }
+    .main{
+        width: 1200px;
+        margin:0 auto;
+        padding-top:30px;
+    }
+    .bt-ckgd{
+        display: none;
+    }
+} 
+/* 小 */
+@media only screen and (max-width: 680px){
+    
+    .ttroutes{
+        display: none;
+    }
+    .main{
+        width: 680px;
+        margin: 0 auto;
+    }
+    .ri{
+        display: none;
+    }
+    .imgroute{
+        width: 668px;
+        margin: 20px 0 0 0;
+        border-top:1px solid #8f8f8f;
+    }
+    .ttad{
+        display: block;
+        
+    }
+    .imgroute > .le{
+        width: 668px;
+        height: 1045px;
+        border: 0;
+    }
+    .sy{
+        margin:0 0 25px 0;
+        position: relative;
+    }
+    .sy > div{
+        width: 668px;
+        position: absolute;
+        top: 401px;
+    }
+    .sy > img{
+        height: 400px;
+        width: 668px;
+    }
+    .dfy > img{
+        height: 400px;
+        width: 668px;
+    }
+    .dfy > div{
+        width: 668px;
+    }
+    .bt-ckgd{
+        display: block;
+    }
+} 
+/* +++++++++鉴证推荐 */
+/* 大 */
+ @media only screen and (min-width: 680px){
+    .container{
+        display: none;
+    }
+    .rcmd{
+        display: block;
+    }
+    .main{
+        width: 1200px;
+        margin:0 auto;
+        padding-top:30px;
+    }
+
+} 
+/* 小 */
+ @media only screen and (max-width: 680px){
+    .container{
+        display: block;
+    }
+    .rcmd{
+        display: none;
+    }
+    .col-xs-7 >img{
+        height: 409px;
+    }
+    .col-xs-5 >img{
+        height: 158px;
+    }
+} 
+/* 使命与愿景 */
+/* 大页面 */
+@media only screen and (min-width: 1000px){
+    .transition{
+        width: 100%;
+    }
+    .missionout{
+        width: 100%;
+        height: 1440px;
+        background-color: #dddddd;
+        position: relative;
+        background-image: url(img/back.png) no-repeat;
+    }
+    .missionpc{
+        display: block;
+    }
+    .missionad{
+        display:none;
+    }
+
+}
+/* 小页面 */
+@media only screen and (max-width: 1000px){
+    .transition{
+        display: none;
+    }
+    .missionout{
+        width: 100%;
+        height: 1700px;
+        background-color: white;        position: relative;
+        background-image: url(img/back.png) no-repeat;
+    }
+    .missionad{
+        width: 668px;
+        margin:0 auto;
+        position: absolute;
+        top: 176px;
+    }
+    .missionad img{
+        width: 100%;
+    }
+    .litt{
+        height: 108px;
+        text-align: center;
+        font-size: 30px;
+        padding-top:40px;
+    }
+    
+    /* 使命与愿景-手机端 */
+    .li-text{
+        font-size: 24px;
+        width: 668px;
+        line-height: 40px;
+    }
+    .missionad div:nth-child(2){
+        width: 668px;
+        height: 570px;
+    }
+    .lastimg li{
+        height: 193px;
+        border-bottom:1px solid #8f8f8f;
+    }
+    .lastimg li img{
+        margin: 48px 70px 0 60px;
+        height: 80px;
+        width: 80px;
+        float: left;
+    }
+    .lastimg li p{
+        margin-top: 45px;
+        font-size: 24px;
+        width: 390px;
+        float: left;
+    }
+    .missionpc{
+        display: none;
+    }
+    .missionad{
+        display: block;
+    }
+    
+}
+/* +++++++++++++++++++++++底部 */
+/* 大框 */
+@media only screen and (min-width: 680px){
+    #adbtm{
+        display: none;
+    }
+    #bottomsix{
+        height:530px;
+        width:100%;
+        margin:0 auto;
+        background-color:  #343235; 
+    }
+    
+}
+/* 小 */
+@media only screen and (max-width: 680px){
+    #box6{
+        height:300px;
+        width:100%;
+        margin:0 auto;
+        padding-top:70px;
+        background-color:  #343235; 
+    }
+    #adbtm{
+        display: block;
+        background-color: #343235;
+        text-align: center;
+    }
+    #adbtm p{
+        /* margin-top: */
+        font-size: 24px;
+        line-height: 50px;
+        color:white;
+    }
+    #btm6-first{
+        display: none;
+    }
+    #bottom7{
+        display: none;
+    }
+}
+a{
+    text-decoration:none;
+    color:black;
+}
+a:link { text-decoration: none;;color: black;} 
+a:active { text-decoration:none;color: black;} 
+a:hover { text-decoration:none;color: black;} 
+a:visited { text-decoration: none;color: black;} 
+#navbar-fixed-top{
+    height: 100px;
+    width: 1200px;margin:0 auto;
+}
+/* 顶部黑框 */
+.blackout{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+}
+.black{
+    width: 1200px;
+    margin:0 auto;
+    height: 40px;
+    background-color: black;
+    top:0px;
+}
+.black > span{
+    color:white;
+    float: right;
+    font-size: 14px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.black >img{
+    float: right;
+    margin-top: 9px;
+}
+/* 顶部白框 */
+.whiteout{
+    background-color: white;
+    height: 100px;
+    position: relative;
+    top: 40px;
+}
+.whitein{
+    width: 1200px;
+    margin:0 auto;
+}
+ #myNav{  
+    width: 1200px;
+    margin: 0 auto;
+    padding-top: 20px;
+    height: 97px;
+    background-color: white;
+    font-size: 16px;
+}
+.blackout{
+    top: 0px;
+    width: 100%;
+    height: 40px;
+    position: fixed;
+    z-index: 100;
+}
+.navbar-fixed-top {
+    top: 40px;
+    border-width: 0 0 1px;
+}
+.navbar-toggle{
+    margin:20px 15px 0 0;
+} 
+/* 轮播图 */
+
+#generic{
+    height: 400px;
+}
+
+#generic > a > .b1{
+    float: left;
+    margin:180px 0 0 25px;
+}
+#generic > a > .b2{
+    float: right;
+    margin:180px 25px 0 0;
+}
+
+.texts > .t1{
+    width: 145px;
+    height: 35px;
+    background-color: #d3d3d8;
+    float: left;
+    border-radius: 2px;
+}
+.texts > .t1 > img{
+    margin:6px 18px 0 25px;
+    float: left;
+}
+.texts > .t1 >span{
+    float: left;
+    line-height: 35px;
+}
+.texts > input{
+    height: 35px;
+    width: 305px;
+    padding-left: 8px;
+    float: left;
+}
+/* 机场接送 */
+/* PC端 */
+.transfer{
+    margin: 30px 0 30px 0;
+    height: 364px;
+}
+.transfer>img{
+    float: left;
+}
+.transfer>div{
+    background-color: #18366e;
+    width: 265px;
+    height: 364px;
+    font-size: 25px;
+    border-radius:0 8px 8px  0;
+    color: white;
+    float:left;
+    /* 内容居中显示 */
+    text-align: center;
+}
+.transfer>div>img{
+    margin: 80px 80px 0 80px;
+}
+.transfer>div>p{
+    margin:20px 0 50px;
+}
+.transfer>div>button{
+    background-color: #18366e;
+    border-radius: 5px;
+    height: 52px;
+    width: 178px;
+}
+/* 手机端 */
+.transferad{
+    height: 200px;
+}
+.transferad>img{
+    float: left;
+    margin:45px 15px 0 0px;
+}
+.transferad>span{
+    margin: 40px 0 30px 0;
+    font-size: 30px;
+    color: #18366e;
+    display:block;
+}
+.transferad > p{
+    font-size: 20px;
+    color:#666666;
+    float: left;
+}
+.transferad >button{
+    color: #8f8f8f;
+    border:1px solid #8f8f8f;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    width: 166px;
+    height: 54px;
+    font-size: 25px;
+    margin-left:35px;
+}
+/* 热门线路 */
+
+/* 手机端 */
+.ttad{
+    height: 40px;
+    width: 655px;
+    border-left: 3px solid red;
+    margin:47px 0 17px 0;
+    line-height: 40px;
+    font-size: 28px;
+    padding-left:5px;
+    float: left;
+}
+.ttad span{
+    font-size: 20px;
+}
+.bt-ckgd{
+    height: 100px;
+    width: 668px;
+    text-align: center;
+    float: left;
+    background-color: white;
+    margin-bottom:20px;
+}
+.bt-ckgd > button{
+    color: #8f8f8f;
+    border:1px solid #8f8f8f;
+    background-color: white;
+    border-radius: 10px;
+    float: left;
+    width: 166px;
+    height: 54px;
+    font-size: 25px;
+    margin:20px 0 0 245px;
+}
+/* PC端 */
+.ttroutes{
+    height: 135px;
+    width: 1200px;
+    text-align: center;
+    clear: both;
+    z-index: 12;
+    padding:28px 0 0px 0;
+}
+.ttroutes > p{
+    font-size:35px;
+}
+.ttroutes > span{
+    font-size:15px;
+    display: block;
+}
+
+
+.imgroute > .ri{
+    width: 51%;
+    height: 1035px;
+    float: left;
+}
+.sy{
+    height: 491px;
+    border-bottom: 3px solid #dddddd;
+}
+.dfy{
+    /* 未设置宽度，继承父亲 */
+    height: 524px;
+}
+.ri ul li div img{
+    width: 100%;
+}
+
+.sy>div{
+    height: 103px;
+    background-color: black;
+    color:white;
+    padding:10px 0px 0px 25px;
+}
+.sy>div > p{
+    font-size: 20px;
+}
+.sy > div> p>span{
+    font-size:26px;
+}
+.dfy > div{
+    height: 103px;
+    background-color: black;
+    color:white;
+    padding:10px 0px 0px 25px;
+}
+.dfy>div > p{
+    font-size: 20px;
+}
+.dfy> div> p>span{
+    font-size:26px;
+}
+.ri > ul >li > div{
+    /* 高度不确定，靠图片撑开 */
+    border-bottom: 9px solid #dddddd;
+    position: relative;
+}
+.ri > ul >li > div>div{
+    position: absolute;
+    bottom:0px;
+    height: 95px;
+    width: 100%;
+    color:white;
+    padding:10px 0 0 25px;
+    background-color:rgba(0,0,0, 0.5);
+}
+.ri > ul >li > div>div > p{
+    font-size: 20px;
+}
+.ri > ul >li > div > div > p > span{
+    font-size:26px;
+}
+/* 签证推荐 */
+
+#first{
+    width: 32%;
+    float: left;
+    position: relative;
+    border-right: 3px solid #dddddd;
+}
+#first > p{
+   height: 74px;
+   width: 398px;
+   color:white;
+   background: rgba(0,0,0, 0.5);
+   padding:20px 0 0 30px;
+   position: absolute;
+   top:480px;
+   font-size: 20px;
+}
+#first > p >span{
+    font-size: 25px;
+}
+/* 签证-手机端 */
+.col-xs-7{
+    height: 400px;
+    width: 296px;
+    position: relative;
+
+    margin:0 0 0 0;
+    
+}
+.col-xs-7> p{
+    height: 55px;
+    /* 90%自适应我是天才吧 */
+    width: 90%;
+    color:white;
+    background: rgba(0,0,0, 0.5);
+    padding:5px 0 0 15px;
+    position: absolute;
+    top:345px;
+    font-size: 25px;
+ }
+ .col-xs-7 > img{
+     height: 100%;
+     width: 100%;
+ }
+
+.row{
+    width: 100%;
+    margin:0 0 0 0;
+}
+.row>div{
+    float:left;
+}
+.col-xs-5{
+    width: 350px;
+    height: 183px;
+    position: relative;
+    margin:0 0 30px 0;
+}
+.col-xs-5 > img{
+    height: 100%;
+    width: 100%;
+}
+.col-xs-5> p{
+   height: 55px;
+   width: 90%;
+   color:white;
+   background: rgba(0,0,0, 0.5);
+   padding:5px 0 0 15px;
+   position: absolute;
+   top:130px;
+   font-size: 25px;
+}
+.row>div> p >span{
+    font-size: 35px;
+}
+/* PC */
+.four > ul > li > div {
+    width: 398px;
+    height: 278px;
+    border-left:3px solid #d3d3d8;
+    border-bottom:3px solid #dddddd;
+    position: relative;
+}
+.four > ul > li {
+    float: left;
+    width: 33%;
+}
+.four > ul > li > div >p{
+    color:white;
+    background: rgba(0,0,0, 0.5);
+    font-size: 20px;
+    float:left;
+    height: 45px;
+    width: 398px;
+    top:230px;
+    position: absolute;
+    padding:5px 0 0 38px;
+}
+.four > ul > li > div >p>span{
+    font-size: 25px;
+}
+/* 查看更多 */
+.btnmore{
+    height: 115px;
+    text-align: center;
+    clear: both;
+    margin-bottom: 30px;
+}
+.btnmore>button{
+    width: 223px;
+    height: 56px;
+    border-radius: 5px;
+    border:2px solid grey;
+    font-size:25px;
+    margin-top:20px;
+    background-color: white;
+}
+
+/* 使命与愿景 */
+
+.missionout img{
+    width: 100%;
+}
+.missionpc{
+    width: 1200px;
+    margin: 0 auto;
+}
+.mstext{
+    height: 1240px;
+    position: absolute;
+    top:220px;
+}
+/* 第一行 */
+.mstext div:nth-child(1){
+    height: 351px;
+    border-radius: 5px;
+}
+.mstext div:nth-child(1) img{
+    width: 43%;height: 351px;
+    position: absolute;
+    top:0px;
+    left:0;
+}
+.mstext div:nth-child(1) div{
+    width: 57%;height: 351px;
+    background:  rgba(13, 62, 107, 0.753);
+    text-align: center;
+    position: absolute;
+    top:0px;
+    left:498px;
+    padding-top:88px;
+}
+.mstext div:nth-child(1) div span{
+    font-size: 28px;
+    color:white;
+}
+.mstext div:nth-child(1) div p{
+    font-size: 16px;
+    color:white;
+    line-height: 36px;
+    margin-top: 20px;
+}
+/* 第二行 */
+.mstext img{
+    width: 100%;height: 450px;
+}
+/* 第三行 */
+.picbom{
+    height: 400px;
+    background-color: #1c5080;
+    position: relative;
+
+    padding: 0 36px 0 45px;
+}
+.picbom ul li{
+    width: 365px;
+    height: 395px;
+    float: left;
+    position: relative;
+}
+.picbom ul li img:nth-child(1){
+    position: absolute;
+    top:15%;
+    left:27%;
+    height: 185px;
+    width: 185px;
+} 
+.picbom ul li img:nth-child(2){
+    position: absolute;
+    top:25%;
+    left:45%;
+    height: 68px;
+    width: 60px;
+}
+.picbom ul li span{
+    position: absolute;
+    top:45%;
+    left: 43%;
+    font-size: 20px;
+    color: white;
+}
+.picbom ul li p{
+    width: 80%;
+    position: absolute;
+    top:68%;
+    left: 28%;
+    color:white;
+    font-size: 16px;
+}
+#b5-2{
+    height:400px;
+    margin-top:2px;
+    background-color:#1c5080;
+    border-radius:8px;
+}
+#b5-ul{
+    margin-left:130px;
+    padding-top:50px;
+}
+#b5-ul p{
+    margin-top:15px;
+}
+#b5-ul li{
+    color:white;
+    font-size:20px;
+    text-align: center;
+    height:300px;
+    width:310px;
+    float: left;
+    background: url(../img/rorate.png) no-repeat center top;
+}
+/* 底部 */
+#btm6-first{
+    width:1200px;
+    height:335px;
+    color:white;
+    margin:0 auto;
+}
+#btm6-first-2{
+    float: right;
+    width:1090px;
+    height:290px;
+    margin-top:45px;
+    line-height:25px;
+}
+#btm6-first ul{
+    margin:0;
+}
+#part-li1{
+    line-height:15px;
+    height:75px;
+    width:480px;
+}
+#part-li1 img{
+    margin-left:10px;
+    margin-bottom: 5px;
+}
+#part6-sp2 span{
+    padding:6px;
+}
+#part6-sp3 span{
+    padding:6px;
+}
+#part6-sp4 span{
+    padding:7px;
+}
+#part6-ul li{
+    padding-bottom:20px;
+}
+#part-li{
+    font-size:18px;
+    margin-left:10px;
+    margin-top:45px;
+    float: left;
+    height:250px;
+    width:94px;
+}
+#bottom7{
+    width:100%;
+    border-top:0.5px solid grey;
+    height:100px;
+    margin-top:30px;
+    text-align: center;
+    color:white;
+    font-size:16px;
+}
+
+
+
